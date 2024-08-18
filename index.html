@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jagadeesh A Latti</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jagadeesh A Latti</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile-pic.jpg" alt="Jagadeesh profile Pic" class="my-pic">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1"> Hello,I'm</p>
+            <h1 class="title">Jagadeesh</h1>
+            <p class="section_text_p2"> Web Developer</p>
+            <div class="btn-container">
+                <button class=" btn btn-color-2" onclick="window.open('./assets/My_resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="toggleMenuAndNavigate()">Contact Info</button>
+
+            </div>
+        
+
+            <div id="socials-container">
+                <img class="icon" src="./assets/linkedin.png" alt="My linkedin profile" onclick="location.href='https://linkedin.com/'">
+                <img class="icon" src="./assets/github.png" alt="My github profile" onclick="location.href='https://github.com/'">
+            </div>
+                
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title ">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about_pic.jpg" alt="My Pic" class="about-pic">
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <img src="./assets/education.png" alt="Education Icon" class="icon">
+                    <h3>Education</h3>
+                    <p>B.E in CSE <br>BMSCE </p>
+                    
+                </div>
+                <div class="text-container">
+                    <p>I am currently Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, sapiente, vel nulla error aliquid aspernatur sint ut nesciunt, ab magnam dolorum repellendus. Nostrum, delectus repellat animi reprehenderit ipsum cupiditate exercitationem hic modi eligendi sed perspiciatis, distinctio reiciendis iste quam id expedita, beatae tenetur sint eius asperiores inventore! Neque, deserunt dignissimos!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="skills">
+        <h1 class="title">My Skills</h1>
+        <div class="section-container">
+            <div class="section-vertical">
+                <div class="one_boxes">
+                    <h3>Web Development</h3>
+                    
+                    
+                        <ul class="skills">
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>HTML</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>CSS</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>Java Script</li>
+                            </div>
+                            
+                        </ul>
+                    
+                    
+                </div>
+                <div class="one_boxes">
+                    
+                        <h3>Languages</h3>
+                    
+                        <ul class="skills">
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>C</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>Python</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>Java</li>
+                            </div>
+                            
+                        </ul>
+            
+                </div >
+            </div>
+            <div class="section-vertical">
+                <div class="one_boxes">
+                    <h3>App Development</h3>
+                
+                    <ul class="skills">
+                        <div class="skill_name">
+                            <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                            <li>Flutter</li>
+                        </div>
+                        <div class="skill_name">
+                            <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                            <li>Figma</li>
+                        </div>
+                        <div class="skill_name">
+                            <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                            <li>Dart</li>
+                        </div>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="one_boxes">
+                    <h3>Basics of CSE</h3>
+                        <ul>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>DBMS</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>Computer Networks</li>
+                            </div>
+                            <div class="skill_name">
+                                <img src="./assets/checkmark.png" alt="Tick" class="icon">
+                                <li>Automata</li>
+                            </div>
+                            
+                        </ul>
+                </div >
+                 
+            </div>
+        </div>
+        
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="section-container">
+            <div class="project-box">
+                <img src="./assets/project-1.png" alt="Project Image" class="project-image">
+                <h2 class="project-title">College Appication Form</h2>
+                <button onclick="location.href='https://github.com/jagadeeshlatti?tab=repositories'">Github</button>
+            </div>
+            <div class="project-box">
+                <img src="./assets/project-2.png" alt="Project Image" class="project-image">
+                <h2 class="project-title">Expense Tracker App</h2>
+                <button onclick="location.href='https://github.com/jagadeeshlatti?tab=repositories'">Github</button>
+            </div>
+            <div class="project-box">
+                <img src="./assets/project-3.png" alt="Project Image" class="project-image">
+                <h2 class="project-title">Machine Learning</h2>
+                <button onclick="location.href='https://github.com/jagadeeshlatti?tab=repositories'">Github</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h1 class="title">Contact Me</h1>
+            <div class="main-container">
+                <div class="mail-container">
+                    <img src="./assets/email.png" alt="email" class="icon contact-icon" onclick="location.href='mailto:jagadeeshlatti@gmail.com'">
+                    <p> <a>9113870904</a></p>
+                </div>
+                <div class="mail-container">
+                    <img src="./assets/linkedin.png" alt="linkedin" class="icon contact-icon" onclick="location.href='https://linkedin.com/'">
+                    <p><a href="http://www.linkedin.com"> Linkedin</a></p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <footer>
+        <p>CopyRight &#169 2024 Jagadeesh Latti . All Rights Reserved</p>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
